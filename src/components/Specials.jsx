@@ -6,7 +6,7 @@ export default function Specials() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("/src/data/special.json")
+    fetch("/special.json")
       .then((r) => {
         if (!r.ok) throw new Error("Unable to load specials.json");
         return r.json();
