@@ -1,0 +1,130 @@
+{
+  "categories": [
+    {
+      "id": "cakes",
+      "title": "Cakes",
+      "description": "Handcrafted celebration cakes — flavours & sizes",
+      "items": [
+        { "id": "black-forest", "name": "Black Forest Cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "vanilla-delight", "name": "Vanilla Delight Cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "mango-magic", "name": "Mango Cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "oreo-deluxe", "name": "Oreo Cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "butterscotch", "name": "Butterscotch Cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "strawberry-delight", "name": "Strawberry Cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "mousse-chocolate", "name": "Chocolate Mousse Cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "lotus-cheesecake", "name": "Lotus Cheesecake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "motichoor-cheesecake", "name": "Motichoor Cheesecake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "oreo-tres-leches", "name": "Oreo Tres Leches", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "custom-1", "name": "Custom Cake 1", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "custom-2", "name": "Custom Cake 2", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] }
+      ]
+    },
+
+
+    {
+      "id": "pastries",
+      "title": "Pastries",
+      "description": "Fresh daily pastries and sweet treats",
+      "items": [
+        { "id": "strawberry-shortcake", "name": "Strawberry Shortcake", "price": 5.99 },
+        { "id": "mix-fruit-pastry", "name": "Mix Fruit Pastry", "price": 4.99 },
+        { "id": "mango-pastry", "name": "Mango Pastry", "price": 4.99 },
+        { "id": "mango-mousse", "name": "Mango Mousse Pastry", "price": 4.99 },
+        { "id": "pineapple-pastry", "name": "Pineapple Pastry", "price": 4.99 },
+        { "id": "blueberry-pastry", "name": "Blueberry Pastry", "price": 4.99 },
+        { "id": "raspberry-pastry", "name": "Raspberry Pastry", "price": 4.99 },
+        { "id": "rasmalai-pastry", "name": "Rasmalai Pastry", "price": 4.99 },
+        { "id": "gulabjamun-pastry", "name": "Gulab Jamun Pastry", "price": 4.99 },
+        { "id": "butterscotch-pastry", "name": "Butterscotch Pastry", "price": 4.99 },
+        { "id": "black-forest-pastry", "name": "Black Forest Pastry", "price": 4.99 },
+        { "id": "chocolate-hazelnut", "name": "Chocolate Hazelnut Pastry", "price": 4.99 },
+        { "id": "chocolate-raspberry", "name": "Chocolate Raspberry Pastry", "price": 4.99 },
+        { "id": "chocolate-mousse", "name": "Chocolate Mousse Pastry", "price": 4.99 },
+        { "id": "chocolate-swiss-roll", "name": "Chocolate Swiss Roll", "price": 4.99 },
+        { "id": "red-velvet-swiss-roll", "name": "Red Velvet Swiss Roll", "price": 4.99 },
+        { "id": "raspberry-swiss-roll", "name": "Raspberry Swiss Roll", "price": 4.99 },
+        { "id": "mango-swiss-roll", "name": "Mango Swiss Roll", "price": 4.99 },
+        { "id": "chocolate-cream-roll", "name": "Chocolate Cream Roll", "price": 2.99 },
+        { "id": "vanilla-cream-roll", "name": "Vanilla Cream Roll", "price": 2.99 },
+        { "id": "cupcakes", "name": "Cupcakes", "price": 2.99 },
+        { "id": "red-velvet-cheesecake", "name": "Red Velvet Cheesecake", "price": 3.99 },
+        { "id": "strawberry-cheesecake", "name": "Strawberry Cheesecake", "price": 3.99 },
+        { "id": "lotus-cheesecake-pastry", "name": "Lotus Cheesecake Pastry", "price": 4.99 },
+        { "id": "motichoor-cheesecake", "name": "Motichoor Cheesecake Pastry", "price": 7.99 },
+        { "id": "chocolate-tres-leches", "name": "Chocolate Tres Leches", "price": 7.99 },
+        { "id": "oreo-tres-leches", "name": "Oreo Tres Leches", "price": 7.99 },
+        { "id": "mango-tres-leches", "name": "Mango Tres Leches", "price": 7.99 }
+      ]
+    },
+
+    {
+      "id": "snacks",
+      "title": "Snacks",
+      "description": "Savory & filling — quick bites",
+      "items": [
+        { "id": "samosa", "name": "Samosa", "price": 0.99 },
+        { "id": "allo-tikki", "name": "Allo Tikki", "price": 0.99 },
+        { "id": "spring-roll", "name": "Spring Roll", "price": 0.99 },
+        { "id": "allo-patty", "name": "Allo Patty", "price": 1.99 },
+        { "id": "noodle-patty", "name": "Noodle Patty", "price": 2.49 },
+        { "id": "paneer-patty", "name": "Paneer Patty", "price": 2.99 },
+        { "id": "pizza-patty", "name": "Pizza Patty", "price": 4.99 },
+        { "id": "indian-kulcha", "name": "Indian Kulcha", "price": 3.99 },
+        { "id": "noodle-kulcha", "name": "Noodle Kulcha", "price": 5.99 },
+        { "id": "paneer-kulcha", "name": "Paneer Kulcha", "price": 6.99 },
+        { "id": "bhijya-kulcha", "name": "Bhijya Kulcha", "price": 7.99 },
+        { "id": "allo-tikki-burger", "name": "Allo Tikki Burger", "price": 5.99 },
+        { "id": "allo-tikki-noodle-burger", "name": "Allo Tikki Noodle Burger", "price": 6.99 },
+        { "id": "paneer-burger", "name": "Paneer Burger", "price": 8.99 },
+        { "id": "pav-bhaji", "name": "Pav Bhaji", "price": 7.99 },
+        { "id": "tandoori-champ", "name": "Tandoori Champ", "price": 9.99 },
+        { "id": "malai-champ", "name": "Malai Champ", "price": 9.99 },
+        { "id": "achari-champ", "name": "Achari Champ", "price": 9.99 },
+        { "id": "poutine", "name": "Poutine", "price": 7.99 },
+        { "id": "maggie", "name": "Maggie", "price": 7.99 },
+        { "id": "fries", "name": "Fries", "price": 5.99 },
+        { "id": "samosa-with-chana", "name": "Samosa with Chana", "price": 6.99 },
+        { "id": "tikki-with-chana", "name": "Tikki with Chana", "price": 6.99 },
+        { "id": "veg-sandwich", "name": "Veg Sandwich", "price": 7.99 },
+        { "id": "paneer-sandwich", "name": "Paneer Sandwich", "price": 9.99 },
+        { "id": "avocado-sandwich", "name": "Avocado Sandwich", "price": 8.99 },
+        { "id": "veg-wrap", "name": "Veg Wrap", "price": 7.99 },
+        { "id": "paneer-wrap", "name": "Paneer Wrap", "price": 8.99 }
+      ]
+    },
+
+    {
+      "id": "drinks",
+      "title": "Drinks",
+      "description": "Hot & cold beverages",
+      "items": [
+        { "id": "tea-small", "name": "Tea (Small)", "price": 1.99 },
+        { "id": "tea-medium", "name": "Tea (Medium)", "price": 2.99 },
+        { "id": "tea-large", "name": "Tea (Large)", "price": 3.99 },
+        { "id": "coffee-small", "name": "Coffee (Small)", "price": 2.99 },
+        { "id": "coffee-medium", "name": "Coffee (Medium)", "price": 3.99 },
+        { "id": "coffee-large", "name": "Coffee (Large)", "price": 4.99 },
+        { "id": "apple-juice", "name": "Apple Juice", "price": 6.99 },
+        { "id": "orange-juice", "name": "Orange Juice", "price": 6.99 },
+        { "id": "carrot-juice", "name": "Carrot Juice", "price": 6.99 },
+        { "id": "beetroot-juice", "name": "Beetroot Juice", "price": 6.99 },
+        { "id": "pineapple-juice", "name": "Pineapple Juice", "price": 6.99 },
+        { "id": "mix-fruit-juice", "name": "Mix Fruit Juice", "price": 7.99 },
+        { "id": "mango-shake", "name": "Mango Shake", "price": 9.99 },
+        { "id": "oreo-shake", "name": "Oreo Shake", "price": 9.99 },
+        { "id": "chocolate-shake", "name": "Chocolate Shake", "price": 9.99 },
+        { "id": "strawberry-shake", "name": "Strawberry Shake", "price": 9.99 },
+        { "id": "blueberry-shake", "name": "Blueberry Shake", "price": 9.99 },
+        { "id": "mango-lassi", "name": "Mango Lassi", "price": 6.99 },
+        { "id": "sweet-lassi", "name": "Sweet Lassi", "price": 6.99 },
+        { "id": "salty-lassi", "name": "Salty Lassi", "price": 6.99 },
+        { "id": "milk-badam", "name": "Milk Badam", "price": 4.99 },
+        { "id": "frooti", "name": "Frooti", "price": 5.99 },
+        { "id": "soft-drinks", "name": "Soft Drinks", "price": 1.99 },
+        { "id": "limca", "name": "Limca", "price": 2.99 },
+        { "id": "red-bull", "name": "Red Bull", "price": 3.99 },
+        { "id": "water-bottle", "name": "Water Bottle", "price": 1.99 }
+      ]
+    }
+  ]
+}
