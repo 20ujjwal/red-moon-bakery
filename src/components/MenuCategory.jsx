@@ -199,17 +199,18 @@ function CakesDetail({ data, specials, onBack }) {
 
         {/* Special Cakes (with images + list) */}
         <CakePane
-          title="Special Cakes"
-          description="Anniversary, Wedding, Custom & Birthday."
-          images={[
-            "/images/cakes/anniversary.jpg",
-            "/images/cakes/wedding.jpg",
-            "/images/cakes/birthday.jpg",
-          ]}
-          open={openPane === "special"}
-          onToggle={() => setOpenPane(openPane === "special" ? null : "special")}
-          flavours={specials}
-        />
+  title="Special Cakes"
+  description="Anniversary, Wedding, Custom & Birthday."
+  images={[
+    "/images/cakes/anniversary.jpg",
+    "/images/cakes/wedding.jpg",
+    "/images/cakes/birthday.jpg",
+  ]}
+  open={openPane === "special"}
+  onToggle={() => setOpenPane(openPane === "special" ? null : "special")}
+  flavours={[]} // 🔸 empty array, no biscuits shown
+/>
+
       </div>
     </div>
   );

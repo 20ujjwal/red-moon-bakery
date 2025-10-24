@@ -36,7 +36,7 @@ export default function Specials() {
         >
           <div className="rounded-3xl overflow-hidden shadow-2xl ring-4 ring-red-100 hover:ring-red-200 transition-all duration-500">
             <img
-              src="/public/images/desi-biscuits.jpg" // 🔸 put your biscuit photo here
+              src="/images/desi-biscuits.jpg" // 🔸 put your biscuit photo here
               alt="Desi Biscuits"
               className="w-full h-[400px] object-cover md:w-[500px] md:h-[400px]"
               onError={(e) => {
