@@ -198,7 +198,7 @@ function CakesDetail({ data, specials, onBack }) {
         />
 
         {/* Special Cakes (with images + list) */}
-        <CakePane
+     <CakePane
   title="Special Cakes"
   description="Anniversary, Wedding, Custom & Birthday."
   images={[
@@ -206,10 +206,10 @@ function CakesDetail({ data, specials, onBack }) {
     "/images/cakes/wedding.jpg",
     "/images/cakes/birthday.jpg",
   ]}
-  open={openPane === "special"}
-  onToggle={() => setOpenPane(openPane === "special" ? null : "special")}
-  flavours={[]} // 🔸 empty array, no biscuits shown
+  flavours={[]}        // empty array, no biscuits
+  hideButton={true}    // tells CakePane to not render the button
 />
+
 
       </div>
     </div>
@@ -217,7 +217,7 @@ function CakesDetail({ data, specials, onBack }) {
 }
 
 /* --- Cake Pane --- */
-function CakePane({ title, description, images, open, onToggle, flavours }) {
+function CakePane({ title, description, images, open, onToggle, flavours, hideButton }) {
   return (
     <motion.div className="rounded-xl overflow-hidden border bg-gradient-to-b from-red-50 to-white shadow-md p-5">
       <div className="flex items-center justify-between">
@@ -225,15 +225,19 @@ function CakePane({ title, description, images, open, onToggle, flavours }) {
           <h4 className="text-2xl font-bold">{title}</h4>
           <p className="text-gray-600 mt-1">{description}</p>
         </div>
-        <button
-          onClick={onToggle}
-          className="px-4 py-2 rounded-full bg-red-600 text-white font-medium"
-        >
-          {open ? "Hide" : "Explore"}
-        </button>
+
+        {/* Render button only if hideButton is false */}
+        {!hideButton && (
+          <button
+            onClick={onToggle}
+            className="px-4 py-2 rounded-full bg-red-600 text-white font-medium"
+          >
+            {open ? "Hide" : "Explore"}
+          </button>
+        )}
       </div>
 
-      {/* Keep 3 preview images here */}
+      {/* Images */}
       <div className="mt-5 grid grid-cols-3 gap-3">
         {images.map((src, i) => (
           <div
@@ -245,9 +249,9 @@ function CakePane({ title, description, images, open, onToggle, flavours }) {
         ))}
       </div>
 
-      {/* Expand list (now includes special cakes) */}
-      <AnimatePresence>
-        {open && (
+      {/* Expanded list */}
+      {open && flavours.length > 0 && (
+        <AnimatePresence>
           <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
@@ -271,11 +275,12 @@ function CakePane({ title, description, images, open, onToggle, flavours }) {
               ))}
             </div>
           </motion.div>
-        )}
-      </AnimatePresence>
+        </AnimatePresence>
+      )}
     </motion.div>
   );
 }
+
 
 /* --- Category List View --- */
 function CategoryListView({ category, onBack }) {

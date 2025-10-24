@@ -5,18 +5,19 @@
       "title": "Cakes",
       "description": "Handcrafted celebration cakes — flavours & sizes",
       "items": [
-        { "id": "black-forest", "name": "Black Forest Cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
-        { "id": "vanilla-delight", "name": "Vanilla Delight Cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "Pineapple", "name": "Pineapple Cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "Mix-fruit", "name":  "Mix fruit cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
         { "id": "mango-magic", "name": "Mango Cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
-        { "id": "oreo-deluxe", "name": "Oreo Cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "Gulab-jamun", "name":  "Gulab jamun cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
         { "id": "butterscotch", "name": "Butterscotch Cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
         { "id": "strawberry-delight", "name": "Strawberry Cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
-        { "id": "mousse-chocolate", "name": "Chocolate Mousse Cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "Chocolate-Hazelnut", "name": "Chocolate Hazelnut cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
         { "id": "lotus-cheesecake", "name": "Lotus Cheesecake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
         { "id": "motichoor-cheesecake", "name": "Motichoor Cheesecake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
-        { "id": "oreo-tres-leches", "name": "Oreo Tres Leches", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
-        { "id": "custom-1", "name": "Custom Cake 1", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
-        { "id": "custom-2", "name": "Custom Cake 2", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] }
+        { "id": "Mango-mousse-cheesecake", "name": "Mango Mousse Cheesecake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "KitKat", "name": "Kitkat cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "Rasmalai", "name": "Rasmalai cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] },
+        { "id": "Red-velvet", "name": "Red velvet cake", "variants": [ { "size": "6 inches" }, { "size": "7 inches" }, { "size": "8 inches" }, { "size": "10 inches" } ] }
       ]
     },
 
