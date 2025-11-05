@@ -30,6 +30,20 @@ export default function Contact() {
                 <a href="tel:+19054544545" className="text-red-700 hover:underline">(905) 454-4545</a>
               </p>
             </div>
+              {/* WhatsApp */}
+            <div className="flex items-center gap-3">
+              <span className="text-green-600 text-xl">💬</span>
+              <p className="font-medium">WhatsApp:&nbsp;
+                <a
+                  href="https://wa.me/14373244546"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-700 hover:underline"
+                >
+                  +1 (437) 324-4546
+                </a>
+              </p>
+            </div>
 
             <div className="flex items-center gap-3">
               <span className="text-red-600 text-xl">📧</span>
@@ -58,7 +72,7 @@ export default function Contact() {
                 <a
                   href="https://www.instagram.com/redmoonbrampton?igsh=MXRqb2h4YWJxd3oxOQ%3D%3D"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noop ener noreferrer"
                   className="text-red-700 hover:text-red-800 transition-colors font-semibold flex items-center gap-2"
                 >
                   <img
