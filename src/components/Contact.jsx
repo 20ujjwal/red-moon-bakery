@@ -27,7 +27,7 @@ export default function Contact() {
               <span className="text-red-600 text-xl">📞</span>
               <p className="font-medium">
                 Phone:&nbsp;
-                <a href="tel:+19058740003" className="text-red-700 hover:underline">(905) 874-0003</a>
+                <a href="tel:+19054544545" className="text-red-700 hover:underline">(905) 454-4545</a>
               </p>
             </div>
 

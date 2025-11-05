@@ -3,29 +3,23 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function MenuPage() {
   const [menu, setMenu] = useState(null);
-  const [specials, setSpecials] = useState([]); // ✅ for special cakes
   const [loading, setLoading] = useState(true);
   const [active, setActive] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    Promise.all([
-      fetch("/menu.json").then((r) => {
+    fetch("/menu.json")
+      .then((r) => {
         if (!r.ok) throw new Error("Failed to load menu.json");
         return r.json();
-      }),
-      fetch("/special.json")
-        .then((r) => (r.ok ? r.json() : { items: [] }))
-        .catch(() => ({ items: [] })),
-    ])
-      .then(([menuData, specialData]) => {
-        setMenu(menuData);
-        setSpecials(specialData.items || []);
+      })
+      .then((data) => {
+        setMenu(data);
         setLoading(false);
       })
       .catch((err) => {
         console.error(err);
-        setError("Error loading menu data");
+        setError("Error loading menu.json");
         setLoading(false);
       });
   }, []);
@@ -104,7 +98,6 @@ export default function MenuPage() {
               <CakesDetail
                 onBack={() => setActive(null)}
                 data={menu.categories.find((c) => c.id === "cakes")}
-                specials={specials}
               />
             </motion.div>
           )}
@@ -161,18 +154,23 @@ function CategoryCard({ title, caption, image, onClick }) {
 }
 
 /* --- Cakes Detail --- */
-function CakesDetail({ data, specials, onBack }) {
+function CakesDetail({ data, onBack }) {
   const [openPane, setOpenPane] = useState(null);
   const flavours = data?.items || [];
+
+  const specialCakes = [
+    "Photo cakes", "Custom cakes", "Wedding cakes", "Heart cakes", "2 tier cakes", "3 tier cakes",
+    "Anniversary cakes", "Birthday cakes", "Baby showers cakes", "Graduation cakes", "Ribbon cakes",
+    "Travel cakes", "Holiday cakes", "Festival cakes", "Regional cakes", "Layer cakes",
+    "Bundt cakes", "Cheesecakes", "Crepe cakes", "Sheet cakes"
+  ];
 
   return (
     <div className="bg-white rounded-2xl shadow-xl p-6">
       <div className="flex items-center justify-between mb-6">
         <div>
           <h3 className="text-3xl font-extrabold text-red-700">Cakes</h3>
-          <p className="text-gray-600 mt-1">
-            Choose Regular or Special Cakes — explore below!
-          </p>
+          <p className="text-gray-600 mt-1">Choose Regular or Special Cakes — explore below!</p>
         </div>
         <button
           onClick={onBack}
@@ -197,27 +195,38 @@ function CakesDetail({ data, specials, onBack }) {
           flavours={flavours}
         />
 
-        {/* Special Cakes (with images + list) */}
-     <CakePane
-  title="Special Cakes"
-  description="Anniversary, Wedding, Custom & Birthday."
-  images={[
-    "/images/cakes/anniversary.jpg",
-    "/images/cakes/wedding.jpg",
-    "/images/cakes/birthday.jpg",
-  ]}
-  flavours={[]}        // empty array, no biscuits
-  hideButton={true}    // tells CakePane to not render the button
-/>
-
-
+        {/* Special Cakes */}
+        <CakePane
+          title="Special Cakes"
+          description="Anniversary, Wedding, Custom & more occasions."
+          images={[
+            "/images/cakes/anniversary.jpg",
+            "/images/cakes/wedding.jpg",
+            "/images/cakes/birthday.jpg",
+          ]}
+          open={openPane === "special"}
+          onToggle={() => setOpenPane(openPane === "special" ? null : "special")}
+          flavours={specialCakes.map((name) => ({ name, variants: [] }))}
+        />
       </div>
+
+      <p className="text-center text-gray-700 mt-10 text-lg">
+        We have <span className="font-semibold text-red-600">eggless cakes</span> for every kind of occasion.
+        For more cake designs, explore our{" "}
+        <a href="#contact" className="text-red-600 font-medium hover:underline">
+          Instagram
+        </a>{" "}
+        page and contact us through{" "}
+        <a href="#contact" className="text-red-600 font-medium hover:underline">
+          WhatsApp
+        </a>.
+      </p>
     </div>
   );
 }
 
 /* --- Cake Pane --- */
-function CakePane({ title, description, images, open, onToggle, flavours, hideButton }) {
+function CakePane({ title, description, images, open, onToggle, flavours }) {
   return (
     <motion.div className="rounded-xl overflow-hidden border bg-gradient-to-b from-red-50 to-white shadow-md p-5">
       <div className="flex items-center justify-between">
@@ -225,16 +234,12 @@ function CakePane({ title, description, images, open, onToggle, flavours, hideBu
           <h4 className="text-2xl font-bold">{title}</h4>
           <p className="text-gray-600 mt-1">{description}</p>
         </div>
-
-        {/* Render button only if hideButton is false */}
-        {!hideButton && (
-          <button
-            onClick={onToggle}
-            className="px-4 py-2 rounded-full bg-red-600 text-white font-medium"
-          >
-            {open ? "Hide" : "Explore"}
-          </button>
-        )}
+        <button
+          onClick={onToggle}
+          className="px-4 py-2 rounded-full bg-red-600 text-white font-medium"
+        >
+          {open ? "Hide" : "Explore"}
+        </button>
       </div>
 
       {/* Images */}
@@ -249,9 +254,9 @@ function CakePane({ title, description, images, open, onToggle, flavours, hideBu
         ))}
       </div>
 
-      {/* Expanded list */}
-      {open && flavours.length > 0 && (
-        <AnimatePresence>
+      {/* Expandable List */}
+      <AnimatePresence>
+        {open && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
@@ -260,29 +265,28 @@ function CakePane({ title, description, images, open, onToggle, flavours, hideBu
             className="overflow-hidden mt-6"
           >
             <div className="divide-y divide-gray-100">
-              {flavours.map((f, i) => (
+              {flavours.map((f, idx) => (
                 <div
-                  key={i}
-                  className="py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between"
+                  key={idx}
+                  className="py-3 flex items-center justify-between text-gray-800 font-medium"
                 >
-                  <div className="text-gray-800 font-medium text-lg">{f.name}</div>
-                  <div className="text-sm text-gray-500">
-                    {f.variants?.length > 0
-                      ? f.variants.map((v) => v.size).join(" • ")
-                      : "6 inches • 7 inches • 8 inches • 10 inches"}
-                  </div>
+                  <span>{f.name}</span>
+                  {f.variants?.length > 0 && (
+                    <span className="text-sm text-gray-500">
+                      {f.variants.map((v) => v.size).join(" • ")}
+                    </span>
+                  )}
                 </div>
               ))}
             </div>
           </motion.div>
-        </AnimatePresence>
-      )}
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 }
 
-
-/* --- Category List View --- */
+/* --- Generic Category List View --- */
 function CategoryListView({ category, onBack }) {
   if (!category) return null;
   return (

@@ -1,11 +1,12 @@
 {
 "title": "Specials of Red Moon Bakery",
 "items": [
-{ "id": "cookie-sakkar", "name": "Cookie - Sakkar Wale", "image": "/images/specials/cookie-sakkar.jpg", "price": 2.99 },
-{ "id": "cookie-sugar", "name": "Cookie - Sugar Wale", "image": "/images/specials/cookie-sugar.jpg", "price": 2.99 },
-{ "id": "cookie-sugar-free", "name": "Cookie - Sugar Free Wale", "image": "/images/specials/cookie-sugar-free.jpg", "price": 3.49 },
-{ "id": "biscuity-desi-atta", "name": "Desi Atta Biscuit", "image": "/images/specials/desi-atta-biscuit.jpg", "price": 3.49 },
-{ "id": "biscuity-biscuity", "name": "Biscuity", "image": "/images/specials/biscuity.jpg", "price": 2.99 }
+{ "id": "cookie-sakkar", "name": "Cookie - Sakkar Wale", "image": "/images/specials/cookie-sakkar.jpg", "price": 7.99 },
+{ "id": "cookie-sugar", "name": "Cookie - Heart Shape", "image": "/images/specials/cookie-sugar.jpg", "price": 7.99 },
+{ "id": "cookie-sugar-free", "name": "Cookie - Sugar Free Wale", "image": "/images/specials/cookie-sugar-free.jpg", "price": 8.49 },
+{ "id": "biscuity-desi-atta", "name": "Desi Sugar Atta Biscuit", "image": "/images/specials/desi-atta-biscuit.jpg", "price": 7.99},
+{ "id": "biscuity-biscuity", "name": "Biscuity", "image": "/images/specials/biscuity.jpg", "price": 7.99 },
+{ "id": "biscuity-jeera", "name": "Jeera Cookies", "image": "/images/specials/jeera-biscuity.jpg", "price": 8.99 }
 ]
 }
 
