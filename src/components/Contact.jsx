@@ -49,7 +49,7 @@ export default function Contact() {
               <span className="text-red-600 text-xl">📧</span>
               <p className="font-medium">
                 Email:&nbsp;
-                <a href="mailto:info@redmoonbakery.ca" className="text-red-700 hover:underline">info@redmoonbakery.ca</a>
+                <a href="mailto:info@redmoonbrampton.com" className="text-red-700 hover:underline">info@redmoonbrampton.com</a>
               </p>
             </div>
 
