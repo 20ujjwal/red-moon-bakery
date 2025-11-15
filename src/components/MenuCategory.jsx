@@ -181,7 +181,8 @@ function CakesDetail({ data, onBack }) {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Regular Cakes */}
+        
+        {/* Regular Cakes — now shows 6 images */}
         <CakePane
           title="Regular Cakes"
           description="Everyday favourites — flavours & available sizes."
@@ -189,13 +190,16 @@ function CakesDetail({ data, onBack }) {
             "/images/cakes/regular1.jpg",
             "/images/cakes/regular2.jpg",
             "/images/cakes/regular3.jpg",
+            "/images/cakes/regular4.jpg",
+            "/images/cakes/regular5.jpg",
+            "/images/cakes/regular6.jpg",
           ]}
           open={openPane === "regular"}
           onToggle={() => setOpenPane(openPane === "regular" ? null : "regular")}
           flavours={flavours}
         />
 
-        {/* Special Cakes */}
+        {/* Special Cakes — now shows 6 images */}
         <CakePane
           title="Special Cakes"
           description="Anniversary, Wedding, Custom & more occasions."
@@ -203,6 +207,9 @@ function CakesDetail({ data, onBack }) {
             "/images/cakes/anniversary.jpg",
             "/images/cakes/wedding.jpg",
             "/images/cakes/birthday.jpg",
+            "/images/cakes/special1.jpg",
+            "/images/cakes/special2.jpg",
+            "/images/cakes/special3.jpg",
           ]}
           open={openPane === "special"}
           onToggle={() => setOpenPane(openPane === "special" ? null : "special")}
@@ -242,7 +249,7 @@ function CakePane({ title, description, images, open, onToggle, flavours }) {
         </button>
       </div>
 
-      {/* Images */}
+      {/* Images (now 6 shown) */}
       <div className="mt-5 grid grid-cols-3 gap-3">
         {images.map((src, i) => (
           <div
@@ -254,7 +261,7 @@ function CakePane({ title, description, images, open, onToggle, flavours }) {
         ))}
       </div>
 
-      {/* Expandable List */}
+      {/* Expand list */}
       <AnimatePresence>
         {open && (
           <motion.div
