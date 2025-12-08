@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import MenuCategory from './components/MenuCategory'
 import Specials from './components/Specials'
+import AboutSection from "./components/AboutSection"; 
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -14,6 +15,7 @@ export default function App() {
         <Hero />
         <MenuCategory /> 
         <Specials />
+         <AboutSection /> 
         <Contact />
       </main>
       <Footer />
