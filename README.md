@@ -28,10 +28,6 @@ The application focuses on clean UI, smooth animations, performance, and cross-b
 
 ---
 
-## 📸 Screenshots
-*(Add screenshots of homepage, menu page, mobile view here)*
-
----
 
 ## ⚙️ Installation & Setup
 
