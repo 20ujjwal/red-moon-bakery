@@ -52,21 +52,11 @@ export default function AboutSection() {
           {/* Content */}
           <div className="relative p-5 md:p-7 lg:p-8">
             <p className="text-base md:text-lg leading-relaxed text-gray-700 text-justify">
-              <span className="font-semibold">Redmoon Bakery & Café by Jaskar Sandhu</span>{" "}
+              <span className="font-semibold">Redmoon Bakery & Café </span>{" "}
               is a trusted destination in Brampton for fresh, high-quality eggless baked
-              goods and authentic Indian flavours. Originally opened in November 2021 at
-              the McLaughlin and Queen intersection, the bakery quickly became known as
+              goods and authentic Indian flavours.The bakery quickly became known as
               one of the first in Brampton to offer a wide range of completely eggless
               cakes in every flavour, along with fast, same-day customizations.
-              <br />
-              <br />
-              Redmoon proudly reopened at its new home in{" "}
-              <span className="font-semibold">
-                Karol Bagh Plaza, 1098 Peter Robertson Blvd
-              </span>
-              , at the Torbram and Peter Robertson intersection. Today, we continue to
-              serve customers across Brampton and provide reliable delivery throughout
-              the GTA.
               <br />
               <br />
               Along with our signature cakes, we offer freshly baked patties, homemade
