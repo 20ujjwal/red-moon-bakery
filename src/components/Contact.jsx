@@ -1,9 +1,13 @@
+```jsx
 import React from 'react'
 import { motion } from 'framer-motion'
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-20 bg-gradient-to-b from-white to-red-50">
+    <section
+      id="contact"
+      className="relative py-20 bg-gradient-to-b from-white to-red-50"
+    >
       {/* Decorative Background Glow */}
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top_left,_rgba(255,200,200,0.25),_transparent_70%)]"></div>
 
@@ -16,24 +20,38 @@ export default function Contact() {
           viewport={{ once: true }}
           className="flex flex-col justify-center"
         >
-          <h2 className="text-4xl font-extrabold text-red-700 mb-4">Contact & Location</h2>
+          <h2 className="text-4xl font-extrabold text-red-700 mb-4">
+            Contact & Locations
+          </h2>
+
           <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-            We'd love to welcome you to <span className="text-red-600 font-semibold">Red Moon Bakery & Cafe</span> —
-            where every visit is a taste of happiness.
+            We'd love to welcome you to{" "}
+            <span className="text-red-600 font-semibold">
+              Red Moon Bakery & Cafe
+            </span>{" "}
+            — where every visit is a taste of happiness.
           </p>
 
           <div className="space-y-3 text-gray-800">
+            {/* Phone */}
             <div className="flex items-center gap-3">
               <span className="text-red-600 text-xl">📞</span>
               <p className="font-medium">
                 Phone:&nbsp;
-                <a href="tel:+19054544545" className="text-red-700 hover:underline">(905) 454-4545</a>
+                <a
+                  href="tel:+19054544545"
+                  className="text-red-700 hover:underline"
+                >
+                  (905) 454-4545
+                </a>
               </p>
             </div>
-              {/* WhatsApp */}
+
+            {/* WhatsApp */}
             <div className="flex items-center gap-3">
               <span className="text-green-600 text-xl">💬</span>
-              <p className="font-medium">WhatsApp:&nbsp;
+              <p className="font-medium">
+                WhatsApp:&nbsp;
                 <a
                   href="https://wa.me/14373244546"
                   target="_blank"
@@ -45,26 +63,46 @@ export default function Contact() {
               </p>
             </div>
 
+            {/* Email */}
             <div className="flex items-center gap-3">
               <span className="text-red-600 text-xl">📧</span>
               <p className="font-medium">
                 Email:&nbsp;
-                <a href="mailto:info@redmoonbrampton.com" className="text-red-700 hover:underline">info@redmoonbrampton.com</a>
+                <a
+                  href="mailto:info@redmoonbrampton.com"
+                  className="text-red-700 hover:underline"
+                >
+                  info@redmoonbrampton.com
+                </a>
               </p>
             </div>
 
+            {/* Branches */}
             <div className="flex items-start gap-3">
               <span className="text-red-600 text-xl mt-1">📍</span>
-              <p className="font-medium">
-                Address:<br />
-                <span className="text-gray-700">
-                  1098 Peter Robertson Blvd #23,<br />
+
+              <div className="font-medium">
+                <p className="text-red-700 font-bold mb-1">
+                  Brampton Branch
+                </p>
+                <p className="text-gray-700 mb-4">
+                  1098 Peter Robertson Blvd #23,
+                  <br />
                   Brampton, ON L6R 1G6
-                </span>
-              </p>
+                </p>
+
+                <p className="text-red-700 font-bold mb-1">
+                  Mississauga Branch
+                </p>
+                <p className="text-gray-700">
+                  4025 Brandon Gate Dr,
+                  <br />
+                  Mississauga, ON L4T 3Z9, Canada
+                </p>
+              </div>
             </div>
 
-            {/* 🌐 Instagram */}
+            {/* Instagram */}
             <div className="flex items-center gap-3 pt-2">
               <span className="text-red-600 text-xl">📸</span>
               <p className="font-medium">
@@ -72,7 +110,7 @@ export default function Contact() {
                 <a
                   href="https://www.instagram.com/redmoonbrampton?igsh=MXRqb2h4YWJxd3oxOQ%3D%3D"
                   target="_blank"
-                  rel="noop ener noreferrer"
+                  rel="noopener noreferrer"
                   className="text-red-700 hover:text-red-800 transition-colors font-semibold flex items-center gap-2"
                 >
                   <img
@@ -85,40 +123,66 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="pt-4">
+            {/* Google Maps Buttons */}
+            <div className="pt-4 flex flex-wrap gap-3">
               <a
-                href="https://www.google.com/maps?q=Red+Moon+Bakery,+1098+Peter+Robertson+Blvd+%2323,+Brampton,+ON+L6R+1G6"
+                href="https://www.google.com/maps?q=1098+Peter+Robertson+Blvd+%2323,+Brampton,+ON+L6R+1G6"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-6 py-3 mt-3 bg-red-600 text-white font-semibold rounded-full shadow-md hover:bg-red-700 hover:shadow-lg transition-all duration-300"
+                className="inline-block px-6 py-3 bg-red-600 text-white font-semibold rounded-full shadow-md hover:bg-red-700 hover:shadow-lg transition-all duration-300"
               >
-                View on Google Maps
+                Brampton Location
+              </a>
+
+              <a
+                href="https://www.google.com/maps?q=4025+Brandon+Gate+Dr,+Mississauga,+ON+L4T+3Z9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 bg-red-600 text-white font-semibold rounded-full shadow-md hover:bg-red-700 hover:shadow-lg transition-all duration-300"
+              >
+                Mississauga Location
               </a>
             </div>
           </div>
         </motion.div>
 
-        {/* RIGHT SIDE - Map */}
+        {/* RIGHT SIDE - Maps */}
         <motion.div
           initial={{ x: 20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-2xl ring-4 ring-red-200 hover:ring-red-300 transition-all duration-500">
-            <iframe
-              title="Red Moon Bakery Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.6764846756344!2d-79.73941448450077!3d43.74725597911886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3d2bbf5d5ded%3A0xca0235762a1785e8!2sRed%20Moon%20Bakery!5e0!3m2!1sen!2sca!4v1730425090000!5m2!1sen!2sca"
-              width="100%"
-              height="400"
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="border-0"
-            ></iframe>
+          <div className="space-y-6">
+            {/* Brampton */}
+            <div className="rounded-2xl overflow-hidden shadow-2xl ring-4 ring-red-200">
+              <iframe
+                title="Red Moon Bakery Brampton"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.6764846756344!2d-79.73941448450077!3d43.74725597911886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3d2bbf5d5ded%3A0xca0235762a1785e8!2sRed%20Moon%20Bakery!5e0!3m2!1sen!2sca!4v1730425090000!5m2!1sen!2sca"
+                width="100%"
+                height="250"
+                loading="lazy"
+                allowFullScreen
+                className="border-0"
+              ></iframe>
+            </div>
+
+            {/* Mississauga */}
+            <div className="rounded-2xl overflow-hidden shadow-2xl ring-4 ring-red-200">
+              <iframe
+                title="Red Moon Bakery Mississauga"
+                src="https://www.google.com/maps?q=4025+Brandon+Gate+Dr,+Mississauga,+ON+L4T+3Z9&output=embed"
+                width="100%"
+                height="250"
+                loading="lazy"
+                allowFullScreen
+                className="border-0"
+              ></iframe>
+            </div>
           </div>
         </motion.div>
       </div>
     </section>
   )
 }
+```

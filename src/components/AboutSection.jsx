@@ -53,7 +53,7 @@ export default function AboutSection() {
           <div className="relative p-5 md:p-7 lg:p-8">
             <p className="text-base md:text-lg leading-relaxed text-gray-700 text-justify">
               <span className="font-semibold">Redmoon Bakery & Café </span>{" "}
-              is a trusted destination in Brampton for fresh, high-quality eggless baked
+              is a trusted destination in Brampton for fresh, high-quality  baked
               goods and authentic Indian flavours.The bakery quickly became known as
               one of the first in Brampton to offer a wide range of completely eggless
               cakes in every flavour, along with fast, same-day customizations.
