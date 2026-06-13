@@ -55,7 +55,7 @@ export default function AboutSection() {
               <span className="font-semibold">Redmoon Bakery & Café </span>{" "}
               is a trusted destination in Brampton for fresh, high-quality  baked
               goods and authentic Indian flavours.The bakery quickly became known as
-              one of the first in Brampton to offer a wide range of completely eggless
+              one of the first in Brampton to offer a wide range of 
               cakes in every flavour, along with fast, same-day customizations.
               <br />
               <br />
